@@ -1,0 +1,31 @@
+/* ======定义自定义字体====== */
+@font-face {
+    font-family: "MyFont";                                       	/* 你给字体起的名字 */
+    src: url("fonts/潇湘行书超大字库.ttf") format("truetype");	 /* 字体文件的路径和格式 */
+}
+
+/* ======设置全局样式====== */
+* { margin: 0; padding: 0; box-sizing: border-box; }          /* 设置所有元素的外边距和内边距为0，并将盒模型设置为border-box */
+
+/* ======设置body的样式====== */
+body { font-family: "MyFont", system-ui, sans-serif; }        /* 设置字体 */
+
+/* ======设置导航栏的样式====== */
+nav {
+    display: flex;                                              /* 将元素设置为弹性盒子布局 */
+    justify-content: center;                                    /* 设置主轴对齐方式为居中 */
+    gap: 2rem;                                                  /* 设置子元素之间的间距为2rem */    /*rem是相对于根元素字体大小的单位，1rem通常等于16px */
+    padding: 1rem;                                              /* 设置内边距为1rem */
+    border-bottom  : 1px solid #e2e8f0;                       /* 设置底部边框为1px实线，颜色为#e2e8f0 */
+}
+
+/* ======设置导航栏a标签的样式====== */
+nav a {
+    text-decoration: none;                                      /* 去掉文字装饰线（下划线） */
+    color: #00ac28;                                           /* 设置文字颜色 */
+}
+
+/* ======设置导航栏a标签鼠标悬停时的样式====== */
+nav a:hover {
+    color: #3b82f6;                                           /* 设置鼠标悬停时的文字颜色 */
+}
